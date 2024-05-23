@@ -12,6 +12,8 @@ Step 3: Optimize the Model
 
 Step 4: Write a Report on the Neural Network Model
 
+Step 5: Copy Files Into Your Repository
+
 # Neural Network Model Report
 ### 1. Overview of the analysis: Explain the purpose of this analysis
 This assignment aims to develop a deep learning binary classifier that can predict the success rate of funding applicants for Alphabet Soup, a nonprofit organization. The dataset I have contains information on over 34,000 organizations, including detailed application information, affiliations, government classification, funding use cases, income classification, funding amount requested, and fund utilization.
