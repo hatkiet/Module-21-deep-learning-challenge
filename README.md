@@ -73,5 +73,5 @@ The deep learning model used TensorFlow and Keras to achieve a predictive accura
 
 Consider exploring alternative models such as the Random Forest Classifier or Support Vector Machine (SVM) to improve classification. These models can effectively handle numerical and categorical variables, outliers, and imbalanced datasets, potentially enhancing classification performance.
 
-[Note]: I have used our knowledge of Python and Neural Network Modeling (activities of Days 1 and 2 in class) to finish this challenge. Beside, get assistance from ChatGPT/AI for develope the code of Callback checkpoint. 
+[Note]: I have used our knowledge of Python and Neural Network Modeling (activities of Days 1 and 2 in class) to finish this challenge. Beside, I get assistance from ChatGPT/AI for develope the code of Callback checkpoint. 
 
