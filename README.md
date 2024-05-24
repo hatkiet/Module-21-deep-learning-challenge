@@ -40,36 +40,34 @@ ANS: I omitted the Employee Identification Number (EIN) from the feature and tar
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why? 
 
-ANS: In the "AlphabetSoupCharity_Optimization_3.ipynb" file, I configured a neural network model with three hidden layers containing 50, 80, and 50 neurons, respectively. After conducting multiple iterations and tests with different neuron numbers and layer configurations, I found that this specific combination yielded the best results in terms of accuracy and loss. I utilized the "relu" activation function for all three hidden layers to introduce non-linearity and enhance the model's performance. Lastly, I employed the sigmoid activation function for the final output layer to ensure the output remains within the 0 to 1 range, which is crucial for binary classification.
+ANS: In the "AlphabetSoupCharity_Optimization_4.ipynb" file, I configured a neural network model with all three hidden layers containing 80 neurons, respectively. After conducting multiple iterations and tests with different neuron numbers and layer configurations, I found that this specific combination yielded the best results in terms of accuracy and loss. I utilized the "relu" activation function for the first two hidden layers to introduce non-linearity and enhance the model's performance, but using the "tanh" activation function for the third layer in an attempt to improve accuracy and reduce loss. Lastly, I employed the sigmoid activation function for the final output layer to ensure the output remains within the 0 to 1 range, which is crucial for binary classification.
 
-<img width="1072" alt="Screenshot 2024-05-23 at 6 19 40 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/c50fe918-28c6-4a83-8db4-22bb7fa43286">
+<img width="1071" alt="Screenshot 2024-05-23 at 10 29 48 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/5d2b498b-fb3f-41a7-bf63-10478ff409ed">
 
-Additionally, I experimented with a neural network model with all three hidden layers containing 80 neurons, but using the "tanh" activation function for the third layer in an attempt to improve accuracy and reduce loss in the "AlphabetSoupCharity_Optimization_4.ipynb" file.
+Additionally, I experimented with a neural network model with three hidden layers containing 50, 80, and 80 neurons, with all "relu" activation function for all layers in "AlphabetSoupCharity_Optimization_3.ipynb" file.
 
-<img width="1063" alt="Screenshot 2024-05-23 at 6 21 27 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/50fb0d03-75c7-4097-9347-4ddb0d5d6501">
-
+<img width="1073" alt="Screenshot 2024-05-23 at 10 30 22 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/fad055c9-a1d9-41b6-99e5-5dc69f2c77cb">
 
 * Were you able to achieve the target model performance?
 
-ANS: I have managed to create an effective deep neural network model to forecast the success of organizations funded by Alphabet Soup. After refining the model through several optimizations, I attained a predictive accuracy exceeding 75%, ultimately achieving a final accuracy score of 79.58%. This model could serve as a valuable tool for Alphabet Soup in identifying applicants with the highest likelihood of success in their endeavors.
+ANS: I have managed to create an effective deep neural network model to forecast the success of organizations funded by Alphabet Soup. After refining the model through several optimizations, I attained a predictive accuracy exceeding 75%, ultimately achieving a final accuracy score of 79.71% ("AlphabetSoupCharity_Optimization_4.ipynb"). This model could serve as a valuable tool for Alphabet Soup in identifying applicants with the highest likelihood of success in their endeavors.
 
-<img width="731" alt="Screenshot 2024-05-23 at 6 25 12 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/f639821d-fc4a-4dc7-8d64-5761033c2f9d">
-
+<img width="737" alt="Screenshot 2024-05-23 at 10 30 47 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/4974485f-f377-495e-858a-ce2d40d68dfa">
 
 * What steps did you take in your attempts to increase model performance?
 
 ANS: The EIN column was excluded during the optimization process as it was deemed irrelevant. Retaining the NAME column improved model accuracy. To enhance the data, a threshold value was selected, and names occurring less than 5 times were substituted with "Other." A similar methodology was applied to the CLASSIFICATION column, where categories with fewer than 1000 occurrences were replaced with "Other." The resulting grouping was validated for accuracy.
 
-<img width="735" alt="Screenshot 2024-05-23 at 6 26 39 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/3c5eb166-a214-4469-a759-3dfa2e908d65">
+<img width="724" alt="Screenshot 2024-05-23 at 10 31 35 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/5fc5ddbf-88fa-4039-bbbb-064503aa8790">
 
-<img width="710" alt="Screenshot 2024-05-23 at 6 31 13 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/b1efd943-ac63-4e3c-845e-3d6cea73c45e">
+<img width="712" alt="Screenshot 2024-05-23 at 10 32 01 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/82502b92-5618-4bad-b4d1-32015bf17821">
 
-<img width="856" alt="Screenshot 2024-05-23 at 6 31 25 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/d9bd04d1-2ea4-4834-a67c-b6426e977ce0">
+<img width="850" alt="Screenshot 2024-05-23 at 10 32 21 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/0a94cfdc-e54f-46f0-93ca-836c7c0a4f7a">
 
 
 ### 3. Summary: 
 
-The deep learning model used TensorFlow and Keras to achieve a predictive accuracy of 79.58% in classifying the success of Alphabet Soup-funded organizations. The model underwent several optimization attempts, including dropping columns, binning categorical variables, and adjusting layers and activation functions. Although the target accuracy of 75% was successfully achieved, it required significant optimization efforts to enhance loss and accuracy.
+The deep learning model used TensorFlow and Keras to achieve a predictive accuracy of 79.71% in classifying the success of Alphabet Soup-funded organizations. The model underwent several optimization attempts, including dropping columns, binning categorical variables, and adjusting layers and activation functions. Although the target accuracy of 75% was successfully achieved, it required significant optimization efforts to enhance loss and accuracy.
 
 Consider exploring alternative models such as the Random Forest Classifier or Support Vector Machine (SVM) to improve classification. These models can effectively handle numerical and categorical variables, outliers, and imbalanced datasets, potentially enhancing classification performance.
 
