@@ -44,7 +44,7 @@ ANS: In the "AlphabetSoupCharity_Optimization_4.ipynb" file, I configured a neur
 
 <img width="1071" alt="Screenshot 2024-05-23 at 10 29 48 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/5d2b498b-fb3f-41a7-bf63-10478ff409ed">
 
-Additionally, I experimented with a neural network model with three hidden layers containing 50, 80, and 80 neurons, with all "relu" activation function for all layers in "AlphabetSoupCharity_Optimization_3.ipynb" file.
+Additionally, I experimented with a neural network model with three hidden layers containing 50, 80, and 50 neurons, with all "relu" activation function for all layers in "AlphabetSoupCharity_Optimization_3.ipynb" file.
 
 <img width="1073" alt="Screenshot 2024-05-23 at 10 30 22 PM" src="https://github.com/hatkiet/deep-learning-challenge/assets/154276115/fad055c9-a1d9-41b6-99e5-5dc69f2c77cb">
 
